@@ -29,7 +29,7 @@
 
 1. **Method**
 	1.Get All range 
-		getAll(range_name)
+		```jsgetAll(range_name)```
 		example
 ```js
 const { googleSheets } = require("google-sheets")
