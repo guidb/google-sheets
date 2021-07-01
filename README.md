@@ -29,7 +29,7 @@
 
 1. **Method**
 	1.Get All range 
-		```jsgetAll(range_name)```
+		```getAll(range_name)```
 		example
 ```js
 const { googleSheets } = require("google-sheets")
@@ -50,7 +50,7 @@ test()
 
 2. **Method**
 	1.Get getRow range 
-		db.getRow(range_name, user_data, get_row_num, return_row_number)
+		```db.getRow(range_name, user_data, get_row_num, return_row_number)```
 		example
 ```js
 const { googleSheets } = require("google-sheets")
