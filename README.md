@@ -147,6 +147,13 @@ true
 */
 ```
 
+Before 
+
+![](https://github.com/guidb/google-sheets/blob/main/ss/dbsavesheet.png?raw=true)
+
+After
+
+![](https://github.com/guidb/google-sheets/blob/main/ss/dbsaverowsheet.png?raw=true)
 
 5. **saverow** 
 		```saveRow(range_name, user_data, get_row_num, new_data, range_name0)```
@@ -156,7 +163,8 @@ const { googleSheets } = require("google-sheets")
 async function test() {
   var db = new googleSheets("your_sheet_id", "credentials.json")
   var range_name = "Sheet1!A2:Z";
-  var data = await db.getRow(range_name, user_data, get_row_num, return_row_number)
+  var range_name_update = "Sheet1!A:Z"
+  var data = await db.saveRow(range_name, 123456, 0, "gibran", "Sheet1!C")
   console.log(JSON.stringify(data, null, 2))
 }
 
