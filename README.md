@@ -175,6 +175,13 @@ test()
 
 */
 ```
+Before
+
+![](https://github.com/guidb/google-sheets/blob/main/ss/dbsaverow.png?raw=true)
+
+After
+
+![](https://github.com/guidb/google-sheets/blob/main/ss/dbsaverows.png?raw=true)
 
 6. **saverows** 
 		```saveRows(range_name, user_data, get_row_num, new_data_array, range_name_update, range_name_update0)```
