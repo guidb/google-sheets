@@ -90,6 +90,8 @@ test()
 */
 ```
 
+![](https://github.com/guidb/google-sheets/blob/main/ss/dbsheet.png?raw=true)
+
 3. **Get getRows** 
 		```getRows(range_name, user_data, get_row_num)```
 		example
@@ -98,15 +100,21 @@ const { googleSheets } = require("google-sheets")
 async function test() {
   var db = new googleSheets("your_sheet_id", "credentials.json")
   var range_name = "Sheet1!A2:Z";
-  var data = await db.getRow(range_name, user_data, get_row_num, return_row_number)
+  var user_data = "12345"
+  var get_row_num = 0
+  var data = await db.getRows(range_name,user_data, get_row_num)
+  console.log(JSON.stringify(data, null, 2))
   console.log(JSON.stringify(data, null, 2))
 }
 
 test()
 //--! Result log here !--\\
 /*
-
-
+{
+  "0": "12345",
+  "1": "azkadev",
+  "2": "azka"
+}
 */
 ```
 
