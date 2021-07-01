@@ -65,7 +65,8 @@ test()
   ]
 ]
 */
-```
+```		
+![](https://github.com/guidb/google-sheets/blob/main/ss/dbsheet.png?raw=true)
 
 2. **Get getRow** 
 		```db.getRow(range_name, user_data, get_row_num, return_row_number)```
@@ -74,16 +75,18 @@ test()
 const { googleSheets } = require("google-sheets")
 async function test() {
   var db = new googleSheets("your_sheet_id", "credentials.json")
-  var range_name = "Sheet1!A2:Z";
-  var data = await db.getRow(range_name, user_data, get_row_num, return_row_number)
+  var range_name = "Sheet1!A2:Z"; //--! fil your range_name !--\\
+  var user_data = "12345" //--! fill find data !--\\
+  var get_row_num = 0 //--! the data is 0 because it is in range a, if b is 1 and next !!--\\
+  var return_row_num = 1 //--! retur row b if you want c fill 2 next... !--\\
+  var data = await db.getRow(range_name,user_data, get_row_num, return_row_num)
   console.log(JSON.stringify(data, null, 2))
 }
 
 test()
 //--! Result log here !--\\
 /*
-
-
+"azkadev"
 */
 ```
 
