@@ -27,7 +27,7 @@
 
 ## ❄Docs 
 
-1. **Get All range** 
+1. **Get All** 
 		```getAll(range_name)```
 		example
 ```js
@@ -47,8 +47,87 @@ test()
 */
 ```
 
-2. **Get getRow range** 
+2. **Get getRow** 
 		```db.getRow(range_name, user_data, get_row_num, return_row_number)```
+		example
+```js
+const { googleSheets } = require("google-sheets")
+async function test() {
+  var db = new googleSheets("your_sheet_id", "credentials.json")
+  var range_name = "Sheet1!A2:Z";
+  var data = await db.getRow(range_name, user_data, get_row_num, return_row_number)
+  console.log(JSON.stringify(data, null, 2))
+}
+
+test()
+//--! Result log here !--\\
+/*
+
+
+*/
+```
+
+3. **Get getRows** 
+		```getRows(range_name, user_data, get_row_num)```
+		example
+```js
+const { googleSheets } = require("google-sheets")
+async function test() {
+  var db = new googleSheets("your_sheet_id", "credentials.json")
+  var range_name = "Sheet1!A2:Z";
+  var data = await db.getRow(range_name, user_data, get_row_num, return_row_number)
+  console.log(JSON.stringify(data, null, 2))
+}
+
+test()
+//--! Result log here !--\\
+/*
+
+
+*/
+```
+
+4. **save** 
+		```save(range_name, user_data, array_save, array_update, range_name_update) ```
+		example
+```js
+const { googleSheets } = require("google-sheets")
+async function test() {
+  var db = new googleSheets("your_sheet_id", "credentials.json")
+  var range_name = "Sheet1!A2:Z";
+  var data = await db.getRow(range_name, user_data, get_row_num, return_row_number)
+  console.log(JSON.stringify(data, null, 2))
+}
+
+test()
+//--! Result log here !--\\
+/*
+
+
+*/
+```
+5. **saverow** 
+		```saveRow(range_name, user_data, get_row_num, new_data, range_name0)```
+		example
+```js
+const { googleSheets } = require("google-sheets")
+async function test() {
+  var db = new googleSheets("your_sheet_id", "credentials.json")
+  var range_name = "Sheet1!A2:Z";
+  var data = await db.getRow(range_name, user_data, get_row_num, return_row_number)
+  console.log(JSON.stringify(data, null, 2))
+}
+
+test()
+//--! Result log here !--\\
+/*
+
+
+*/
+```
+
+6. **saverows** 
+		```saveRows(range_name, user_data, get_row_num, new_data_array, range_name_update, range_name_update0)```
 		example
 ```js
 const { googleSheets } = require("google-sheets")
