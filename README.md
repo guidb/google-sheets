@@ -30,6 +30,9 @@
 1. **Get All** 
 		```getAll(range_name)```
 		example
+		
+![](https://github.com/guidb/google-sheets/blob/main/ss/dbsheet.png?raw=true)
+
 ```js
 const { googleSheets } = require("google-sheets")
 async function test() {
