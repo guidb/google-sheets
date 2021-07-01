@@ -45,8 +45,25 @@ async function test() {
 test()
 //--! Result log here !--\\
 /*
-
-
+[
+  [
+    "12345",
+    "azkadev",
+    "azka"
+  ],
+  [
+    "123456",
+    "devano",
+    "devan",
+    "alaska"
+  ],
+  [
+    "1234567",
+    "",
+    "farel",
+    "farel"
+  ]
+]
 */
 ```
 
