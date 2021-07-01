@@ -153,7 +153,7 @@ Before
 
 After
 
-![](https://github.com/guidb/google-sheets/blob/main/ss/dbsaverowsheet.png?raw=true)
+![](https://github.com/guidb/google-sheets/blob/main/ss/dbsaverow.png?raw=true)
 
 5. **saverow** 
 		```saveRow(range_name, user_data, get_row_num, new_data, range_name0)```
