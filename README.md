@@ -27,8 +27,7 @@
 
 ## ❄Docs 
 
-1. **Method**
-	1.Get All range 
+1. **Get All range** 
 		```getAll(range_name)```
 		example
 ```js
@@ -48,8 +47,7 @@ test()
 */
 ```
 
-2. **Method**
-	1.Get getRow range 
+2. **Get getRow range** 
 		```db.getRow(range_name, user_data, get_row_num, return_row_number)```
 		example
 ```js
