@@ -27,6 +27,7 @@
 
 ## ❄Docs 
 
+-- Method
 
 ## ❄To-Do
 A list that i should do more for this project...
