@@ -48,6 +48,27 @@ test()
 */
 ```
 
+2. **Method**
+	1.Get getRow range 
+		db.getRow(range_name, user_data, get_row_num, return_row_number)
+		example
+```js
+const { googleSheets } = require("google-sheets")
+async function test() {
+  var db = new googleSheets("your_sheet_id", "credentials.json")
+  var range_name = "Sheet1!A2:Z";
+  var data = await db.getRow(range_name, user_data, get_row_num, return_row_number)
+  console.log(JSON.stringify(data, null, 2))
+}
+
+test()
+//--! Result log here !--\\
+/*
+
+
+*/
+```
+
 ## ❄To-Do
 A list that i should do more for this project...
 
