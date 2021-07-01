@@ -34,23 +34,18 @@
 ```js
 const { googleSheets } = require("google-sheets")
 async function test() {
-
-  var db = new googleSheets("1CdfvqCbnspsIdp6QiLxwVwujKPa9AxwbmP5Jkj6f5tQ", "credentials.json")
-  var array_save = [
-    "botol", "mba"
-  ];
-  var array_update = [
-    "botol","azka", "botol", "iya bB"
-  ];
+  var db = new googleSheets("your_sheet_id", "credentials.json")
   var range_name = "Sheet1!A2:Z";
-  var range_name_update = "Sheet1!A:Z";
-
   var data = await db.getAll(range_name)
   console.log(JSON.stringify(data, null, 2))
-
 }
 
 test()
+//--! Result log here !--\\
+/*
+
+
+*/
 ```
 
 ## ❄To-Do
