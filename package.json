@@ -1,0 +1,29 @@
+{
+  "name": "@guidb/google-sheets",
+  "version": "0.0.1",
+  "description": "Google Sheets Api (V4) library crud database",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guidb/google-sheets.git"
+  },
+  "keywords": [
+    "google-sheets",
+    "spreadsheets",
+    "google-sheet",
+    "database",
+    "sql"
+  ],
+  "author": "@azkadev",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/guidb/google-sheets/issues"
+  },
+  "homepage": "https://github.com/guidb/google-sheets#readme",
+  "dependencies": {
+    "googleapis": "^80.0.0"
+  }
+}
