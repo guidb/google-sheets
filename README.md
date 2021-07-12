@@ -35,7 +35,7 @@
 ![](https://github.com/guidb/google-sheets/blob/main/ss/dbsheet.png?raw=true)
 
 ```js
-const { googleSheets } = require("guidb/google-sheets")
+const { googleSheets } = require("@guidb/google-sheets")
 async function test() {
   var db = new googleSheets("your_sheet_id", "credentials.json")
   var range_name = "Sheet1!A2:Z";
@@ -73,7 +73,7 @@ test()
 		```db.getRow(range_name, user_data, get_row_num, return_row_number)```
 		example
 ```js
-const { googleSheets } = require("guidb/google-sheets")
+const { googleSheets } = require("@guidb/google-sheets")
 async function test() {
   var db = new googleSheets("your_sheet_id", "credentials.json")
   var range_name = "Sheet1!A2:Z"; //--! fil your range_name !--\\
@@ -97,7 +97,7 @@ test()
 		```getRows(range_name, user_data, get_row_num)```
 		example
 ```js
-const { googleSheets } = require("guidb/google-sheets")
+const { googleSheets } = require("@guidb/google-sheets")
 async function test() {
   var db = new googleSheets("your_sheet_id", "credentials.json")
   var range_name = "Sheet1!A2:Z";
@@ -130,7 +130,7 @@ After
 		```save(range_name, user_data, array_save, array_update, range_name_update) ```
 		example
 ```js
-const { googleSheets } = require("guidb/google-sheets")
+const { googleSheets } = require("@guidb/google-sheets")
 async function test() {
   var db = new googleSheets("your_sheet_id", "credentials.json")
   var array_save = [ "data1", "data 2", "data 3" ]
@@ -160,7 +160,7 @@ After
 		```saveRow(range_name, user_data, get_row_num, new_data, range_name0)```
 		example
 ```js
-const { googleSheets } = require("guidb/google-sheets")
+const { googleSheets } = require("@guidb/google-sheets")
 async function test() {
   var db = new googleSheets("your_sheet_id", "credentials.json")
   var range_name = "Sheet1!A2:Z";
@@ -188,7 +188,7 @@ After
 		```saveRows(range_name, user_data, get_row_num, new_data_array, range_name_update, range_name_update0)```
 		example
 ```js
-const { googleSheets } = require("guidb/google-sheets")
+const { googleSheets } = require("@guidb/google-sheets")
 async function test() {
   var db = new googleSheets("your_sheet_id", "credentials.json")
   var range_name = "Sheet1!A2:Z";
